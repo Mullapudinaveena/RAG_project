@@ -12,7 +12,7 @@ from app.utils.logger import get_logger
 logger = get_logger(__name__)
 router = APIRouter(prefix="/health", tags=["Health"])
 
-
+# Health check routes
 @router.get(
     "",
     response_model=HealthResponse,
